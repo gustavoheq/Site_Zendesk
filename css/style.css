@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #445733;
+}
+h2{
+    font-size: 5rem;
+    color: aliceblue;
+}
+.Historia{
+height: 100vh;
+color: aliceblue;
+text-align: center;
+}
+.quemSOMOS{
+    height: 100vh;
+    color: aliceblue;
+    text-align: center;
+}
+.Localiza{
+    height: 100vh;
+    color: aliceblue;
+    text-align: center;
+}
+.MVV{
+    height: 100vh;
+    color: aliceblue;
+    text-align: center;
+}
+.ODS{
+    height: 100vh;
+    color: aliceblue;
+    text-align: center;
+}
+.Contato{
+    height: 100vh;
+    color: aliceblue;
+    text-align: center;
+}
