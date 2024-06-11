@@ -1,41 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    background-color:#586037;
-} 
-.conteiner{
-    display: flex; /* Define o contêiner como um contêiner flexível */
-    justify-content: space-evenly; /* Espaça as imagens uniformemente */
-    width: 100%; /* Opcional: define a largura do contêiner para ocupar toda a largura disponível */
+body {
+    background-color: #586037;
+}
+
+.conteiner {
+    display: flex;
+    /* Define o contêiner como um contêiner flexível */
+    justify-content: space-evenly;
+    /* Espaça as imagens uniformemente */
+    width: 100%;
+    /* Opcional: define a largura do contêiner para ocupar toda a largura disponível */
 }
 
 
 
-h2{
+h2 {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 5rem;
     color: aliceblue;
 }
-p{
+
+p {
     font-size: 2rem;
-text-align: justify;
-font-family: "Barlow", sans-serif;
-font-weight: 300;
-font-style: normal;
+    text-align: justify;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 header.box {
     display: flex;
     flex-direction: row;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    background-color: transparent; 
+    background-color: transparent;
     height: 30vh;
 
 }
@@ -49,9 +55,9 @@ header.box {
     border-radius: 25px;
     font-size: 25px;
     font-family: "Chakra Petch", sans-serif;
-     background-color: transparent; 
-     color: white;
-   
+    background-color: transparent;
+    color: white;
+
 }
 
 nav>a>button:hover {
@@ -59,56 +65,65 @@ nav>a>button:hover {
     background-color: white;
 }
 
-.Historia{
-height: 110vh;
-color: aliceblue;
+.Historia {
+    height: 110vh;
+    color: aliceblue;
 
 }
-.quemSOMOS{
+
+.quemSOMOS {
     height: 110vh;
     color: aliceblue;
-   
+
 }
-.Localiza{
-    height: 110vh;
-    color: aliceblue;
-   text-align: center;
-}
-.MVV{
-    height: 110vh;
-    color: aliceblue;
- 
-}
-.BOX{
-    height: 80vh;
-    margin: 10px;
-    padding: 20px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#BOX1{
-    padding: 10px;
-border: solid 2px;
-border-radius: 25px;
-}
- #BOX2{
-    padding: 10px;
-    border: solid 2px;
-    border-radius: 25px;
- }
- #BOX3{
-    padding: 10px;
-    border: solid 2px;
-    border-radius: 25px;
- }
-.ODS{
+
+.Localiza {
     height: 110vh;
     color: aliceblue;
     text-align: center;
 }
-.Contato{
+
+.MVV {
+    height: 110vh;
+    color: aliceblue;
+
+}
+
+.BOX {
+    height: 80vh;
+    margin: 10px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#BOX1 {
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+}
+
+#BOX2 {
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+}
+
+#BOX3 {
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+}
+
+.ODS {
+    height: 110vh;
+    color: aliceblue;
+    text-align: center;
+}
+
+.Contato {
     height: 110vh;
     color: aliceblue;
     text-align: center;
