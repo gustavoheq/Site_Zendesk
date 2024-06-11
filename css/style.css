@@ -1,42 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 
 body{
-    background-color: #445733;
+    background-color:#586037;
+} 
+.conteiner{
+    display: flex; /* Define o contêiner como um contêiner flexível */
+    justify-content: space-evenly; /* Espaça as imagens uniformemente */
+    width: 100%; /* Opcional: define a largura do contêiner para ocupar toda a largura disponível */
 }
+
+
+
 h2{
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 5rem;
     color: aliceblue;
 }
+p{
+    font-size: 2rem;
+text-align: justify;
+font-family: "Barlow", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+header.box {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    background-color: transparent; 
+    height: 30vh;
+
+}
+
+
+.box nav>a>button {
+    /* margin: 50px; */
+    margin: 25px;
+    padding: 5px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: "Chakra Petch", sans-serif;
+     background-color: transparent; 
+     color: white;
+   
+}
+
+nav>a>button:hover {
+    color: black;
+    background-color: white;
+}
+
 .Historia{
-height: 100vh;
+height: 110vh;
 color: aliceblue;
-text-align: center;
+
 }
 .quemSOMOS{
-    height: 100vh;
+    height: 110vh;
     color: aliceblue;
-    text-align: center;
+   
 }
 .Localiza{
-    height: 100vh;
+    height: 110vh;
     color: aliceblue;
-    text-align: center;
+   text-align: center;
 }
 .MVV{
-    height: 100vh;
+    height: 110vh;
     color: aliceblue;
-    text-align: center;
+ 
 }
+.BOX{
+    height: 80vh;
+    margin: 10px;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#BOX1{
+    padding: 10px;
+border: solid 2px;
+border-radius: 25px;
+}
+ #BOX2{
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+ }
+ #BOX3{
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+ }
 .ODS{
-    height: 100vh;
+    height: 110vh;
     color: aliceblue;
     text-align: center;
 }
 .Contato{
-    height: 100vh;
+    height: 110vh;
     color: aliceblue;
     text-align: center;
 }
