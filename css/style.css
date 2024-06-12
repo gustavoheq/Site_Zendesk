@@ -3,29 +3,27 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    color: aliceblue;
     background-color: #586037;
+    /* max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem; */
 }
 
-.conteiner {
-    display: flex;
-    /* Define o contêiner como um contêiner flexível */
-    justify-content: space-evenly;
-    /* Espaça as imagens uniformemente */
-    width: 100%;
-    /* Opcional: define a largura do contêiner para ocupar toda a largura disponível */
-}
 
 
 
 h2 {
-    font-family: "Barlow", sans-serif;
+    /* font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 5rem;
-    color: aliceblue;
+    color: aliceblue; */
 }
 
 p {
@@ -66,65 +64,187 @@ nav>a>button:hover {
 }
 
 .Historia {
-    height: 110vh;
-    color: aliceblue;
+    height: 80vh;
 
+
+}
+
+.Carrossel {
+    margin: auto;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 700px;
+    width: 700px;
+
+}
+
+.conteiner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.conteiner>img {
+    object-fit: cover;
+    height: 700px;
+    width: 700px;
 }
 
 .quemSOMOS {
-    height: 110vh;
-    color: aliceblue;
+    margin-top: 7vh;
+    height: 300vh;
+
 
 }
+
+.IMG_produtos>figure>img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .Localiza {
+    display: flex;
+    /* Define o Localiza como um contêiner flexível */
+    flex-direction: column;
+    /* Organiza os filhos em coluna */
     height: 110vh;
-    color: aliceblue;
-    text-align: center;
+    align-items: center;
+    /* Centraliza os filhos horizontalmente */
 }
+
+.Localiza>figure {
+    display: flex;
+    /* Define o figure como um contêiner flexível */
+    justify-content: center;
+    /* Alinha os filhos (imagem) à esquerda */
+    align-items: flex-start;
+    margin-top: 100px;
+    /* Espaçamento acima do figure */
+}
+
+.Localiza>figure>img {
+    height: 500px;
+    width: 300px;
+    margin-left: 50px;
+    /* Espaçamento à esquerda da imagem */
+}
+
+.Localiza>p {
+    margin-top: 100px;
+    /* Espaçamento acima do parágrafo */
+    margin-right: 50px;
+    /* Espaçamento à direita do parágrafo */
+}
+
+
+
 
 .MVV {
     height: 110vh;
-    color: aliceblue;
+    /* min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy; */
 
 }
 
 .BOX {
-    height: 80vh;
-    margin: 10px;
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.BOX1 {
+    position: absolute;
+    height: 320px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
     padding: 20px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
 }
 
-#BOX1 {
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    left: 50px;
+} 
+
+#next {
+    left: unset;
+    right: 50px;
+}
+/* .BOX2 {
     padding: 10px;
     border: solid 2px;
     border-radius: 25px;
 }
 
-#BOX2 {
+.BOX3 {
     padding: 10px;
     border: solid 2px;
     border-radius: 25px;
-}
-
-#BOX3 {
-    padding: 10px;
-    border: solid 2px;
-    border-radius: 25px;
-}
+} */
 
 .ODS {
     height: 110vh;
-    color: aliceblue;
+
     text-align: center;
 }
 
 .Contato {
     height: 110vh;
-    color: aliceblue;
+
     text-align: center;
 }
