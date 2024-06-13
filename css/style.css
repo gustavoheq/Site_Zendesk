@@ -7,21 +7,9 @@
 
 }
 
-body{
-    display: grid;
-    /* height: 100%;
-    width: 100%; */
-    place-items: center;
-    background-color: #0f705d;
-}
-
 body {
     color: aliceblue;
     background-color: #586037;
-    /* max-width: 1100px;
-    margin: auto;
-    overflow: auto;
-    padding: 0 2rem; */
 }
 
 
@@ -30,7 +18,7 @@ li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -47,31 +35,13 @@ header {
     border-radius: 5px;
 }
 
-.link {
-    list-style: none;
-}
-
-.link li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.link li a {
-    transition: all 0.33s ease 0s;
-}
-
-.link li a:hover {
-    color: #0088a9;
-}
-
-
-/* h2 {
+h2 {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 5rem;
-    color: aliceblue; 
-} */
+    color: #fff; 
+}
 
 p {
     font-size: 2rem;
@@ -79,297 +49,5 @@ p {
     font-family: "Barlow", sans-serif;
     font-weight: 300;
     font-style: normal;
-}
-
-header.box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    height: 30vh;
-
-}
-
-
-.box nav>a>button {
-    /* margin: 50px; */
-    margin: 25px;
-    padding: 5px;
-    border: 3px solid transparent;
-    border-radius: 25px;
-    font-size: 25px;
-    font-family: "Chakra Petch", sans-serif;
-    background-color: transparent;
-    color: white;
-
-}
-
-nav>a>button:hover {
-    color: black;
-    background-color: white;
-}
-
-.Historia {
-    height: 80vh;
-
-
-}
-
-.Carrossel {
-    margin: auto;
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 700px;
-    width: 700px;
-
-}
-
-.conteiner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
-}
-
-.conteiner>img {
-    object-fit: cover;
-    height: 700px;
-    width: 700px;
-}
-
-.quemSOMOS {
-    margin-top: 7vh;
-    height: 300vh;
-
-
-}
-
-.IMG_produtos>figure>img {
-    height: 100px;
-    width: 100px;
-}
-
-
-
-
-.Localiza {
-    display: flex;
-    /* Define o Localiza como um contêiner flexível */
-    flex-direction: column;
-    /* Organiza os filhos em coluna */
-    height: 110vh;
-    align-items: center;
-    /* Centraliza os filhos horizontalmente */
-}
-
-.Localiza>figure {
-    display: flex;
-    /* Define o figure como um contêiner flexível */
-    justify-content: center;
-    /* Alinha os filhos (imagem) à esquerda */
-    align-items: flex-start;
-    margin-top: 100px;
-    /* Espaçamento acima do figure */
-}
-
-.Localiza>figure>img {
-    height: 500px;
-    width: 300px;
-    margin-left: 50px;
-    /* Espaçamento à esquerda da imagem */
-}
-
-.Localiza>p {
-    margin-top: 100px;
-    /* Espaçamento acima do parágrafo */
-    margin-right: 50px;
-    /* Espaçamento à direita do parágrafo */
-}
-
-
-
-
-.MVV {
-    height: 110vh;
-    /* min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: fantasy; */
-
-}
-
-.BOX {
-    position: relative;
-    width: 100%;
-    height: 370px;
-    overflow: hidden;
-}
-
-.BOX1 {
-    position: absolute;
-    height: 320px;
-    width: 200px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 20px;
-    transition: 0.5s;
-    left: calc(50% - 110px);
-    top: 0;
-}
-
-#next, #prev{
-    position: absolute;
-    top: 40%;
     color: #fff;
-    background-color: transparent;
-    border: none;
-    font-size: xxx-large;
-    font-family: "Barlow", sans-serif;
-    font-weight: bold;
-    left: 50px;
-} 
-
-#next {
-    left: unset;
-    right: 50px;
-}
-/* .BOX2 {
-    padding: 10px;
-    border: solid 2px;
-    border-radius: 25px;
-}
-
-.BOX3 {
-    padding: 10px;
-    border: solid 2px;
-    border-radius: 25px;
-} */
-
-.ODS {
-    height: 110vh;
-
-    text-align: center;
-}
-
-.Contato {
-    height: 110vh;
-
-    text-align: center;
-}
-
-button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-} 
-
-
-.wrapper .button {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    /* float: left; */
-    margin: 0 5px;
-    overflow: hidden;
-    background: #ffffff;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0, 0.1);
-    transition: all 0.3s ease-out;
-}
-
-.wrapper .button:hover {
-    width: 200px;
-}
-.wrapper .button .icon{
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-
-.wrapper .button:nth-child(1) .icon{
-    background: #4267B2;
-}
-.wrapper .button:nth-child(2) .icon{
-    background: #1DA1F2;
-}
-.wrapper .button:nth-child(3) .icon{
-    background: #E1306C;
-}
-.wrapper .button:nth-child(4) .icon{
-    background: #333;
-}
-.wrapper .button:nth-child(5) .icon{
-    background: #ff0000;
-}
-
-.wrapper .button .icon i{
-    font-size: 25px;
-    line-height: 60px;
-}
-.wrapper .button:hover .icon i{
-    font-size: 25px;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon i{
-    color: #fff;
-}
-.wrapper .button span{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 10px;
-}
-
-.wrapper .button:nth-child(1) span{
-    color: #4267B2;
-}
-.wrapper .button:nth-child(2) span{
-    color: #1DA1F2;
-}
-.wrapper .button:nth-child(3) span{
-    color: #E1306C;
-}
-.wrapper .button:nth-child(4) span{
-    color: #333;
-}
-.wrapper .button:nth-child(5) span{
-    color: #ff0000;
-}
-
-footer{
-    background-color: #07551e;
-}
-
-.footerContainer{
-    
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-
-.footerBottom{
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-}
-
-.footerBottom p{
-    color: white;
 }
