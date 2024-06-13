@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -13,6 +13,15 @@ body{
     width: 100%; */
     place-items: center;
     background-color: #0f705d;
+}
+
+body {
+    color: aliceblue;
+    background-color: #586037;
+    /* max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem; */
 }
 
 
@@ -53,6 +62,202 @@ header {
 
 .link li a:hover {
     color: #0088a9;
+}
+
+
+/* h2 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
+    color: aliceblue; 
+} */
+
+p {
+    font-size: 2rem;
+    text-align: justify;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 30vh;
+
+}
+
+
+.box nav>a>button {
+    /* margin: 50px; */
+    margin: 25px;
+    padding: 5px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: transparent;
+    color: white;
+
+}
+
+nav>a>button:hover {
+    color: black;
+    background-color: white;
+}
+
+.Historia {
+    height: 80vh;
+
+
+}
+
+.Carrossel {
+    margin: auto;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 700px;
+    width: 700px;
+
+}
+
+.conteiner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.conteiner>img {
+    object-fit: cover;
+    height: 700px;
+    width: 700px;
+}
+
+.quemSOMOS {
+    margin-top: 7vh;
+    height: 300vh;
+
+
+}
+
+.IMG_produtos>figure>img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+.Localiza {
+    display: flex;
+    /* Define o Localiza como um contêiner flexível */
+    flex-direction: column;
+    /* Organiza os filhos em coluna */
+    height: 110vh;
+    align-items: center;
+    /* Centraliza os filhos horizontalmente */
+}
+
+.Localiza>figure {
+    display: flex;
+    /* Define o figure como um contêiner flexível */
+    justify-content: center;
+    /* Alinha os filhos (imagem) à esquerda */
+    align-items: flex-start;
+    margin-top: 100px;
+    /* Espaçamento acima do figure */
+}
+
+.Localiza>figure>img {
+    height: 500px;
+    width: 300px;
+    margin-left: 50px;
+    /* Espaçamento à esquerda da imagem */
+}
+
+.Localiza>p {
+    margin-top: 100px;
+    /* Espaçamento acima do parágrafo */
+    margin-right: 50px;
+    /* Espaçamento à direita do parágrafo */
+}
+
+
+
+
+.MVV {
+    height: 110vh;
+    /* min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy; */
+
+}
+
+.BOX {
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.BOX1 {
+    position: absolute;
+    height: 320px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    left: 50px;
+} 
+
+#next {
+    left: unset;
+    right: 50px;
+}
+/* .BOX2 {
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+}
+
+.BOX3 {
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 25px;
+} */
+
+.ODS {
+    height: 110vh;
+
+    text-align: center;
+}
+
+.Contato {
+    height: 110vh;
+
+    text-align: center;
 }
 
 button {
