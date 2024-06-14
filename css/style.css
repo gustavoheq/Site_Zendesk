@@ -19,6 +19,30 @@ header {
     background-color: #24252a;
     box-shadow: 0px 3px 10px #464646;
 }
+body {
+    color: rgb(248, 251, 255);
+    background-color: #586037;
+     /* max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;  */
+}
+
+h2 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+p {
+    font-size: 2rem;
+    text-align: justify;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 
 .nav-bar {
     display: flex;
@@ -94,8 +118,130 @@ header {
     display: none;
 }
 
-main {
+/* main {
     height: 80vh;
+} */
+
+.Historia {
+    height: 100vh;
+
+
+}
+
+.Carrossel {
+    margin: auto;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 700px;
+    width: 700px;
+
+}
+
+.conteiner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.conteiner>img {
+    object-fit: cover;
+    height: 700px;
+    width: 700px;
+}
+
+.quemSOMOS {
+    margin-top: 7vh;
+    height: 100vh;
+
+
+}
+
+#cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.card {
+    height: 410px;
+    width: 300px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.card > img {
+    height: 250px;
+    border-radius: 10px;
+}
+
+.Localiza {
+    display: flex;
+    /* Define o Localiza como um contêiner flexível */
+    flex-direction: column;
+    /* Organiza os filhos em coluna */
+    height: 100vh;
+    align-items: center;
+    /* Centraliza os filhos horizontalmente */
+}
+
+.Localiza>figure {
+    display: flex;
+    /* Define o figure como um contêiner flexível */
+    justify-content: center;
+    /* Alinha os filhos (imagem) à esquerda */
+    align-items: flex-start;
+    margin-top: 100px;
+    /* Espaçamento acima do figure */
+}
+
+.Localiza>figure>img {
+    height: 500px;
+    width: 300px;
+    margin-left: 50px;
+    /* Espaçamento à esquerda da imagem */
+}
+
+.Localiza>p {
+    margin-top: 100px;
+    /* Espaçamento acima do parágrafo */
+    margin-right: 50px;
+    /* Espaçamento à direita do parágrafo */
+}
+
+.BOX{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.BOX1{
+    height: 400px;
+    width: 300px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin:50px;
+    padding: 20px;
+    text-align: center;
+}
+.BOX1> img{
+height: 250px;
+border-radius: 10px;
+
+}
+
+.ODS {
+    height: 100vh;
+
+    text-align: center;
 }
 
 footer {
