@@ -40,12 +40,25 @@ header {
 .nav-list {
     display: flex;
     align-items: center;
+    color: var(--color-neutral-30);
+    transition: color 0.4s;
 }
 
 .nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
+}
+
+.nav-list .nav-item a {
+    text-decoration: none; 
+    color: var(--color-neutral-30); 
+    transition: color 0.4s; 
+}
+
+.nav-list .nav-item a:hover {
+    color: #7f37c9; 
 }
 
 .nav-item {
