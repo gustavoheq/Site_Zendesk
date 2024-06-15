@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "name":" LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira _bambu01.png"
+    },
+    {
+        "id": 2,
+        "name":" LD02 LOUNGE CHAIR",
+        "price": 250,
+        "image": "IMG_produtos/Cadeira _bambu02.png"
+    },
+    {
+        "id": 3,
+        "name":" LD03 LOUNGE CHAIR",
+        "price": 290,
+        "image": "IMG_produtos/Cadeira _bambu03.png"
+    },
+    {
+        "id": 4,
+        "name":" LD04 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira  _bambu04.png"
+    },
+    {
+        "id": 5,
+        "name":" LD05 LOUNGE CHAIR",
+        "price": 210,
+        "image": "CIMG_produtos/Cadeira_jornal.png"
+    },
+    {
+        "id": 6,
+        "name":" LD06 LOUNGE CHAIR",
+        "price": 100,
+        "image": "IMG_produtos/Poltona_papel.png"
+    },
+    {
+        "id": 7,
+        "name":" LD07 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Poltrona_papel_2.png"
+    },
+    {
+        "id": 8,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira _bambu01.png"
+    },
+    {
+        "id": 9,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira _bambu01.png"
+    },
+    {
+        "id": 10,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira _bambu01.png"
+    },
+    {
+        "id": 11,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira _bambu01.png"
+    },
+    {
+        "id": 12,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira _bambu01.png"
+    },
+    {
+        "id": 13,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/Cadeira _bambu01.png"
+    },
+    {
+        "id": 14,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/mesa.png"
+    },
+    {
+        "id": 15,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/conjunto_01.png"
+    },
+    {
+        "id": 16,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "IMG_produtos/conjunto_02.png"
+    }
+
+]
