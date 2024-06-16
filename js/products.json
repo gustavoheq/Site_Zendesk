@@ -27,7 +27,7 @@
         "id": 5,
         "name":" LD05 LOUNGE CHAIR",
         "price": 210,
-        "image": "CIMG_produtos/Cadeira_jornal.png"
+        "image": "IMG_produtos/Cadeira_jornal.png"
     },
     {
         "id": 6,
@@ -45,37 +45,37 @@
         "id": 8,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "IMG_produtos/Cadeira _bambu01.png"
+        "image": "IMG_produtos/Mesa_v_Quadrada.png"
     },
     {
         "id": 9,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "IMG_produtos/Cadeira _bambu01.png"
+        "image": "IMG_produtos/mesa_vidro_quadrado.png"
     },
     {
         "id": 10,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "IMG_produtos/Cadeira _bambu01.png"
+        "image": "IMG_produtos/mesa_vidro_rg.png"
     },
     {
         "id": 11,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "IMG_produtos/Cadeira _bambu01.png"
+        "image": "IMG_produtos/mesa_garrafa_redondo.png"
     },
     {
         "id": 12,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "IMG_produtos/Cadeira _bambu01.png"
+        "image": "IMG_produtos/Mesa_Madeira_P.png"
     },
     {
         "id": 13,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "IMG_produtos/Cadeira _bambu01.png"
+        "image": "IMG_produtos/Mesa_Madeira_P_02.png"
     },
     {
         "id": 14,
