@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/cartao.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <title>Reusedecor</title>
 </head>
@@ -60,26 +60,93 @@
     </header>
 
     <main>
-        <section>
-            <form class="pagamento-form" action="/submit-pagamento" method="post">
-                <h2>Informações de Pagamento</h2>
-                <label for="numero-cartao">Número do Cartão:</label>
-                <input type="text" id="numero-cartao" name="numero-cartao" required><br><br>
+        <div class="container"> 
 
-                <label for="nome-cartao">Nome no Cartão:</label>
-                <input type="text" id="nome-cartao" name="nome-cartao" required><br><br>
-
-                <label for="validade">Validade:</label>
-                <input type="text" id="validade" name="validade" placeholder="MM/AAAA" required><br><br>
-
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" required><br><br>
-
-                <input type="submit" value="Finalizar Cadastro">
-            </form>
-        </section>
+            <div class="card-container">        
+                <div class="front">
+                    <div class="image">
+                        <img src="/img/chip.png" alt="">
+                        <img src="/img/visa.png" alt="">
+                    </div>
+                    <div class="card-number-box">################</div>
+                    <div class="flexbox">
+                        <div class="box">
+                            <span>titular do cartão</span>
+                            <div class="card-holder-name">Nome completo</div>
+                        </div>
+                        <div class="box">
+                            <span>expira</span>
+                            <div class="expiration">
+                                <span class="exp-month">mês</span>
+                                <span class="exp-year">ano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="back">
+                    <div class="stripe"></div>
+                    <div class="box">
+                        <span>cvv</span>
+                        <div class="cvv-box"></div>
+                        <img src="/img/visa.png" alt="">
+                    </div>
+                </div>        
+            </div>
+        
+            <form action="">
+                <div class="inputBox">
+                    <span>numero cartão</span>
+                    <input type="text" maxlength="16" class="card-number-input">
+                </div>
+                <div class="inputBox">
+                    <span>titular do cartão</span>
+                    <input type="text" class="card-holder-input">
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <span>expiração mm</span>
+                        <select name="" id="" class="month-input">
+                            <option value="month" selected disabled>mês</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>expiração yy</span>
+                        <select name="" id="" class="year-input">
+                            <option value="year" selected disabled>ano</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>cvv</span>
+                        <input type="text" maxlength="4" class="cvv-input">
+                    </div>
+                </div>
+                <input type="submit" value="concluir" class="submit-btn">
+            </form>        
+        </div>
     </main>
-
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -153,7 +220,7 @@
             2024 Projeto Zendesk.
         </div>
     </footer>
-    <script src="/js/alerts.js"></script>
+    <script src="/js/cartao.js"></script>
 </body>
 
 </html>
