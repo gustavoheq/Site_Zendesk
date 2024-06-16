@@ -266,7 +266,7 @@ body.showCart .container {
 }
 
 main {
-    height: 180vh;
+    height: 200vh;
     background-color: var(--color-ver-04);
 }
 
@@ -278,8 +278,7 @@ main {
 
 .box1 {    
     background-color: var(--color-ver-03);
-
-    padding-bottom:  2vh;
+    padding-bottom:  4vh;
     text-align: center;
 }
 
@@ -300,6 +299,7 @@ main {
 
 .box2 {
     text-align: center;
+    padding-top: 2vh;
 }
 
 .box2 h1, .box2 p {
@@ -313,8 +313,57 @@ main {
     margin-left: 25vw;
 }
 
+article {
+    text-align: center;
+}
 
+.box3 {
+    text-align: center;
+    padding-top: 2vh;
+}
 
+.box3 h1, .box3 p {
+    color: var(--color-ver-03);
+    padding-top: 2vh;
+}
+
+.box3 p {
+    text-align: justify;
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+.box4 {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.box4 h1, .box4 p {
+    color: var(--color-ver-03); 
+    padding-top: 2vh;
+}
+
+.box4 p {
+    text-align: justify;
+    width: 50vw;
+    margin-left: 25vw;
+}
+.box5 {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.box5 h1, .box5 ul li {
+    color: var(--color-ver-03); 
+    padding-top: 2vh;
+}
+
+.box5 p {
+    text-align: justify;
+    width: 50vw;
+    margin-left: 25vw;
+    padding-bottom:  4vh;
+}
 
 footer {
     width: 100%;
