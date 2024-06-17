@@ -290,7 +290,7 @@ main {
     text-transform: uppercase;
 }
 
-.container{
+.formulario{
     min-height: 100vh;
     background: #eee;
     display: flex;
@@ -300,7 +300,7 @@ main {
     padding-bottom: 60px;
 }
 
-.container form{
+.formulario form{
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0,0,0,.1);
@@ -309,18 +309,18 @@ main {
     padding-top: 160px;
 }
 
-.container form .inputBox{
+.formulario form .inputBox{
     margin-top: 20px;
 }
 
-.container form .inputBox span{
+.formulario form .inputBox span{
     display: block;
     color:#999;
     padding-bottom: 5px;
 }
 
-.container form .inputBox input,
-.container form .inputBox select{
+.formulario form .inputBox input,
+.formulario form .inputBox select{
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -328,16 +328,16 @@ main {
     color:#444;
 }
 
-.container form .flexbox{
+.formulario form .flexbox{
     display: flex;
     gap:15px;
 }
 
-.container form .flexbox .inputBox{
+.formulario form .flexbox .inputBox{
     flex:1 1 150px;
 }
 
-.container form .submit-btn{
+.formulario form .submit-btn{
     width: 100%;
     background:linear-gradient(45deg, rgb(43, 226, 150), rgb(12, 145, 45));
     margin-top: 20px;
@@ -349,19 +349,19 @@ main {
     transition: .2s linear;
 }
 
-.container form .submit-btn:hover{
+.formulario form .submit-btn:hover{
     letter-spacing: 2px;
     opacity: .8;
 }
 
-.container .card-container{
+.formulario .card-formulario{
     margin-bottom: -150px;
     position: relative;
     height: 250px;
     width: 400px;
 }
 
-.container .card-container .front{
+.formulario .card-formulario .front{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -375,37 +375,37 @@ main {
     transition:transform .4s ease-out;
 }
 
-.container .card-container .front .image{
+.formulario .card-formulario .front .image{
     display: flex;
     align-items:center;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.container .card-container .front .image img{
+.formulario .card-formulario .front .image img{
     height: 50px;
 }
 
-.container .card-container .front .card-number-box{
+.formulario .card-formulario .front .card-number-box{
     padding:30px 0;
     font-size: 22px;
     color:#fff;
 }
 
-.container .card-container .front .flexbox{
+.formulario .card-formulario .front .flexbox{
     display: flex;
 }
 
-.container .card-container .front .flexbox .box:nth-child(1){
+.formulario .card-formulario .front .flexbox .box:nth-child(1){
     margin-right: auto;
 }
 
-.container .card-container .front .flexbox .box{
+.formulario .card-formulario .front .flexbox .box{
     font-size: 15px;
     color:#fff;
 }
 
-.container .card-container .back{
+.formulario .card-formulario .back{
     position: absolute;
     top:0; left: 0;
     height: 100%;
@@ -420,23 +420,23 @@ main {
     transition:transform .4s ease-out;
 }
 
-.container .card-container .back .stripe{
+.formulario .card-formulario .back .stripe{
     background: #000;
     width: 100%;
     margin: 10px 0;
     height: 50px;
 }
 
-.container .card-container .back .box{
+.formulario .card-formulario .back .box{
     padding: 0 20px;
 }
 
-.container .card-container .back .box span{
+.formulario .card-formulario .back .box span{
     color:#fff;
     font-size: 15px;
 }
 
-.container .card-container .back .box .cvv-box{
+.formulario .card-formulario .back .box .cvv-box{
     height: 50px;
     padding: 10px;
     margin-top: 5px;
@@ -446,7 +446,7 @@ main {
     width: 100%;
 }
 
-.container .card-container .back .box img{
+.formulario .card-formulario .back .box img{
     margin-top: 30px;
     height: 30px;
 }
