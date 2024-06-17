@@ -198,7 +198,7 @@ p {
 }
 .listProduct .item img{
     width: 90%;
-    filter: drop-shadow(0 50px 20px #0009);
+    
 }
 .listProduct{
     display: grid;
@@ -206,7 +206,7 @@ p {
     gap: 20px;
 }
 .listProduct .item{
-    background-color: #EEEEE6;
+    background-color: var(--color-verde-escuro);
     padding: 20px;
     border-radius: 20px;
 }
@@ -215,6 +215,7 @@ p {
     font-size: large;
 }
 .listProduct .item .price{
+    color: var(--color-texto-cards);
     letter-spacing: 7px;
     font-size: small;
 }
