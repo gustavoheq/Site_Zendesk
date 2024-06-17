@@ -25,8 +25,16 @@ body {
     background-color: var(--color-ver-02);
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
 p {
-    font-size: 1.0rem;
+    font-size: 1.3rem;
 }
 
 header {
@@ -97,16 +105,32 @@ svg {
     color: #ffffff;
 }
 
-.login-button button {
-    border: none;
-    background-color: var(--color-ver-04);
-    padding: 20px 25px;
-    border-radius: 5px;
+.login-button {
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.login-button button:hover {
+.login-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-ver-04);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button a:hover {
     transition: 1s;
     opacity: 0.8;
+}
+
+.login-button button {
+    border: none;
+    background-color: #7f37c9;
+    padding: 20px 25px;
+    border-radius: 5px;
 }
 
 .login-button button a {
@@ -222,6 +246,10 @@ body.showCart .container {
     padding: 20px;
     margin: 0;
     font-weight: 300;
+}
+
+a {
+    text-decoration: none;
 }
 
 .cartTab .btn {
@@ -418,13 +446,13 @@ article h1{
 }
 
 .carta-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--color-ver-04);
     margin-bottom: 10px;
 }
 
 .carta-content p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #666;
     line-height: 1.5;
 }
@@ -468,13 +496,13 @@ article h1{
 }
 
 .artigo-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--color-ver-04);
     margin-bottom: 10px;
 }
 
 .artigo-content p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #666;
     line-height: 1.5;
 }
@@ -623,6 +651,7 @@ footer {
 }
 
 #input_group input {
+    text-decoration: none;
     all: unset;
     padding: 0.75rem;
     width: 100%;
@@ -696,12 +725,13 @@ footer {
     }
 
     .mobile-menu .login-button {
-        display: block;
+        display: flex;
         padding: 1rem 2rem;
     }
 
     .mobile-menu .login-button button {
-        width: 100%;
+        background-color:var(--color-neutral-10);
+        padding-left: 33vw;
     }
 
     .open {

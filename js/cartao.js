@@ -39,3 +39,11 @@ document.querySelector('.cvv-input').oninput = () => {
         document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
 }
 
+const form = document.getElementById('paymentForm');
+
+form.addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        alert('Compra realizada com sucesso!'); 
+
+});

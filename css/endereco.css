@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --color-texto-cards:#f0f8ff;
-    --color-claro: #B9CE78;
-    --color-verde-medio: #9FB167;
-    --color-verde-semiescuro: #859456;
-    --color-verde-escuro: #6D7946;
-    --color-textos: #3d3d3d;
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
@@ -183,252 +177,71 @@ body.showCart .container {
 }
 
 main {
+    height: 60vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    display: grid;
-    place-content: center;
 }
 
 .container {
-    position: relative;
-    width: 850px;
-    height: 500px;
+    width: 100%;
+    max-width: 600px;
     background-color: #fff;
-    box-shadow: 25px 30px 55px #5557;
-    border-radius: 13px;
-    overflow: hidden;
-}
-
-.form-container {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    padding: 0px 40px;
-    transition: all 0.6s ease-in-out;
-}
-
-.sign-up-container {
-    opacity: 0;
-    z-index: 1;
-}
-
-.sign-in-container {
-    z-index: 2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    height: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.inputBox {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 50px;
 }
 
-h1 {
-    color: var(--color-verde-escuro);
-}
-
-.social-container {
-    margin: 20px 0px;
-}
-
-.social-container a {
-    border: 1px solid var(--color-verde-escuro);
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 5px;
-    height: 40px;
-    width: 40px;
-}
-
-span {
-    font-size: 12px;
-}
-
-.infield {
-    position: relative;
-    margin: 8px 0px;
-    width: 100%;
-}
-
-input {
-    width: 100%;
-    padding: 12px 8px;
-    background-color: var(--color-texto-cards);
-    border: none;
-    outline: none;
-}
-
-label {
-    position: relative;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-    width: 0%;
-    height: 2px;
-    background-color: var();
-    transition: 0.3s;
-}
-
-input:focus~label {
-    width: 100%;
-}
-
-a {
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0px;
-}
-
-a.forgot {
-    padding-bottom: 3px;
-    border-bottom: 2px solid var(--color-verde-semiescuro);
-}
-
-
-button {
-    border-radius: 20px;
-    border: 1px solid var(--color-verde-escuro);
-    background-color: var(--color-verde-semiescuro);
-    color: var(--color-texto-cards);
-    font-size: 12px;
+.inputBox label {
     font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: lowercase;
+    margin-bottom: 5px;
 }
 
-.form-container button {
-    margin-top: 17px;
-    transition: 80ms ease-in;
-}
-
-.form-container button:hover {
-    background-color: #ffffff;
-    color: var(--color-verde-escuro);
-}
-
-.overlay-container {
-    position: absolute;
-    top: 0;
-    left: 60%;
-    width: 40%;
-    height: 100%;
-    overflow: hidden;
-    transition: transform 0.6s ease-in-out;
-    z-index: 9;
-}
-
-#overlayBtn {
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    top: 304px;
-    transform: translateX(-50%);
-    width: 143.67px;
-    height: 40px;
-    border: 1px solid transparent;
-    background-color: transparent;
-    border-radius: 20px;
-}
-
-.overlay {
-    position: relative;
-    background-color: var(--color-textos);
-    color: var(--color-texto-cards);
-    left: -150%;
-    height: 100%;
-    width: 250%;
-    transition: transform 0.6s ease-in-out;
-}
-
-.overlay-panel {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 40px;
-    text-align: center;
-    height: 100%;
-    width: 340px;
-    transition: 0.6s ease-in-out;
-}
-
-.overlay-left {
-    right: 60%;
-    transform: translateX(-12%);
-
-}
-
-.overlay-right {
-    right: 0;
-    transform: translateX(0%);
-}
-
-.overlay-panel h1 {
-    color: #FFF;
-}
-
-p {
+.inputBox input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 25px 0px 35px;
 }
 
-.overlay-panel button {
+.flexbox {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+
+button[type="submit"],
+.button-link {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    /* background-color: transparent; */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover,
+.button-link:hover {
+    background-color: #45a049;
 }
 
 
-.right-panel-active .overlay-container {
-    transform: translateX(-150%);
-}
-
-.right-panel-active .overlay {
-    transform: translateX(50%);
-}
-
-.right-panel-active .overlay-left {
-    transform: translateX(25%);
-}
-
-.right-panel-active .overlay-right {
-    transform: translateX(35%);
-}
-
-.right-panel-active .sign-in-container {
-    transform: translateX(20%);
-    opacity: 0;
-}
-
-.right-panel-active .sign-up-container {
-    transform: translateX(66.7%);
-    opacity: 1;
-    z-index: 5;
-    animation: show 0.6s;
-}
-
-@keyframes show {
-
-    0%,
-    50% {
-        opacity: 0;
-        z-index: 1;
-    }
-
-    50.1%,
-    100% {
-        opacity: 1;
-        z-index: 5;
-    }
-}
 
 
 footer {
@@ -452,12 +265,12 @@ footer {
 }
 
 .logofo {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .logofo img {
     border-radius: 30px;
-    margin-left: 15px;
+    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -566,7 +379,7 @@ footer {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
     }
-}    
+}
 
 @media screen and (max-width: 768px) {
     .nav-bar {

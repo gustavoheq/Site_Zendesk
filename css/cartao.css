@@ -97,25 +97,6 @@ svg {
     color: #ffffff;
 }
 
-.login-button button {
-    border: none;
-    background-color: var(--color-ver-04);
-    padding: 20px 25px;
-    border-radius: 5px;
-}
-
-.login-button button:hover {
-    transition: 1s;
-    opacity: 0.8;
-}
-
-.login-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
 .mobile-menu-icon {
     display: none;
 }
@@ -205,7 +186,7 @@ main {
 
 .formulario{
     min-height: 100vh;
-    background: #eee;
+    background: var(--color-ver-02);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,12 +232,13 @@ main {
 }
 
 .formulario form .submit-btn{
-    width: 100%;
-    background:linear-gradient(45deg, rgb(43, 226, 150), rgb(12, 145, 45));
+    width: 49%;
+    background:#4CAF50;
+    
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
-    color:#000000;
+    color:#ffffff;
     border-radius: 10px;
     cursor: pointer;
     transition: .2s linear;
@@ -279,7 +261,7 @@ main {
     height: 100%;
     width: 100%;
     top: 0; left: 0;
-    background:linear-gradient(45deg, rgb(43, 226, 150), rgb(12, 145, 45));
+    background:linear-gradient(45deg, rgb(43, 183, 226), rgb(12, 145, 45));
     border-radius: 5px;
     backface-visibility: hidden;
     box-shadow: 0 15px 25px rgba(0,0,0,.2);
@@ -323,7 +305,7 @@ main {
     top:0; left: 0;
     height: 100%;
     width: 100%;
-    background:linear-gradient(45deg, rgb(43, 226, 150), rgb(12, 145, 45));
+    background:linear-gradient(45deg, rgb(43, 183, 226), rgb(12, 145, 45));
     border-radius: 5px;
     padding: 20px 0;
     text-align: right;
@@ -508,10 +490,6 @@ footer {
     }
 
     .nav-item {
-        display: none;
-    }
-
-    .login-button {
         display: none;
     }
 
