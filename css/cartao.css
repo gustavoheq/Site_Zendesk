@@ -5,6 +5,10 @@
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #f5f5f5;
+    --color-ver-01: #E2E7D4;
+    --color-ver-02: #ADB48E;
+    --color-ver-03: #B4BA94;
+    --color-ver-04: #5B6234;
 }
 
 * {
@@ -15,8 +19,18 @@
     letter-spacing: 1px;
 }
 
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-ver-02);
+}
+
+p {
+    font-size: 1.0rem;
+}
+
 header {
-    background-color: #24252a;
+    background-color: var(--color-neutral-10);
     box-shadow: 0px 3px 10px #464646;
 }
 
@@ -63,7 +77,7 @@ header {
 }
 
 .nav-list .nav-item a:hover {
-    color: #7f37c9;
+    color: var(--color-ver-04);
 }
 
 .nav-item {
@@ -85,9 +99,14 @@ svg {
 
 .login-button button {
     border: none;
-    background-color: #7f37c9;
+    background-color: var(--color-ver-04);
     padding: 20px 25px;
     border-radius: 5px;
+}
+
+.login-button button:hover {
+    transition: 1s;
+    opacity: 0.8;
 }
 
 .login-button button a {
@@ -103,11 +122,6 @@ svg {
 
 .mobile-menu {
     display: none;
-}
-
-body {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -143,7 +157,7 @@ body {
 
 .listProduct .item img {
     width: 90%;
-    filter: drop-shadow(0 50px 20px #0009);
+    filter: drop-shadow(0 5px 5px #0009);
 }
 
 .listProduct {
@@ -159,11 +173,13 @@ body {
 }
 
 .listProduct .item h2 {
+    padding-top: 10px;
     font-weight: 500;
     font-size: large;
 }
 
 .listProduct .item .price {
+    padding-top: 10px;
     letter-spacing: 7px;
     font-size: small;
 }
@@ -175,6 +191,10 @@ body {
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 20px;
+}
+.listProduct .item button {
+    cursor: pointer;
+    transition: 1s;
 }
 
 .cartTab {
@@ -262,6 +282,7 @@ body.showCart .container {
 }
 
 main {
+    
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border: none;
@@ -431,7 +452,6 @@ main {
 }
 
 
-
 footer {
     width: 100%;
     color: var(--color-neutral-40);
@@ -506,12 +526,12 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-neutral-30);
+    color: var(--color-ver-03);
     transition: all 0.4s;
 }
 
 .footer-list .footer-link:hover {
-    color: #7f37c9;
+    color: var(--color-ver-04);
 }
 
 #footer_subscribe {
@@ -538,7 +558,7 @@ footer {
 }
 
 #input_group button {
-    background-color: #7f37c9;
+    background-color: #25d366;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
@@ -550,6 +570,7 @@ footer {
 }
 
 #input_group button:hover {
+    transition: 1s;
     opacity: 0.8;
 }
 
@@ -566,7 +587,7 @@ footer {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+}    
 
 @media screen and (max-width: 768px) {
     .nav-bar {
