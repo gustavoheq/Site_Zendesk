@@ -417,15 +417,33 @@ article h1{
 }
 
 .carta {
+    height: 1000px;
     width: 300px;
     background-color: var(--color-ver-01);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     margin-bottom: auto;
-    overflow: hidden;
+    overflow: scroll;
     transition: transform 0.3s ease;
 }
+.carta::-webkit-scrollbar {
+    width: 12px; /* Largura da scrollbar */
+}
+
+.carta::-webkit-scrollbar-track {
+   background-color:  var(--color-ver-01);
+}
+
+.carta::-webkit-scrollbar-thumb {
+    background: #888; /* Cor da thumb */
+    border-radius: 4px; /* Bordas arredondadas da thumb */
+}
+
+.carta::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor da thumb ao passar o mouse */
+}
+
 
 .carta:hover {
     transform: translateY(-5px);
@@ -466,15 +484,33 @@ article h1{
 }
 
 .artigo {
+    height: 1000px;
     width: 300px;
     background-color: var(--color-ver-01);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     margin-bottom: auto;
-    overflow: hidden;
+    overflow: scroll;
     transition: transform 0.3s ease;
 }
+.artigo::-webkit-scrollbar {
+    width: 10px; /* Largura da scrollbar */
+}
+
+.artigo::-webkit-scrollbar-track {
+    background:var(--color-ver-01); /* Cor de fundo da track */
+}
+
+.artigo::-webkit-scrollbar-thumb {
+    background: #888; /* Cor da thumb */
+    border-radius: 4px; /* Bordas arredondadas da thumb */
+}
+
+.artigo::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor da thumb ao passar o mouse */
+}
+
 
 .artigo:hover {
     transform: translateY(-5px);
