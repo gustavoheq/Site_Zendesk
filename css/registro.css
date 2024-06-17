@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 :root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
     --color-neutral-30: #a8a29e;
-    --color-neutral-40: #f5f5f5;
-    --color-ver-01: #E2E7D4;
-    --color-ver-02: #ADB48E;
-    --color-ver-03: #B4BA94;
-    --color-ver-04: #5B6234;
+    --color-verde-escuro: #6D7946;
+    --color-verde-semiescuro: #859456;
+    --color-Verde-medio: #9FB167;
+    --color-claro: #B9CE78;
+    --color-textos: #3d3d3d;
+    --color-texto-cards: #f0f8ff;
 }
 
 * {
@@ -195,175 +197,253 @@ body.showCart .container {
     width: 0;
 }
 
-main {    
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    text-transform: uppercase;
+main {
+    height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
-.formulario{
-    min-height: 100vh;
-    background: #eee;
+.container {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 25px 30px 55px #5557;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.form-container {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    padding: 0px 40px;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-up-container {
+    opacity: 0;
+    z-index: 1;
+}
+
+.sign-in-container {
+    z-index: 2;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+h1 {
+    color: var(--color-verde-escuro);
+}
+
+.social-container {
+    margin: 20px 0px;
+}
+
+.social-container a {
+    border: 1px solid var(--color-verde-escuro);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+}
+
+span {
+    font-size: 12px;
+}
+
+.infield {
+    position: relative;
+    margin: 8px 0px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 8px;
+    background-color: var(--color-texto-cards);
+    border: none;
+    outline: none;
+}
+
+label {
+    position: relative;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: var();
+    transition: 0.3s;
+}
+
+input:focus~label {
+    width: 100%;
+}
+
+a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0px;
+}
+
+a.forgot {
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--color-verde-semiescuro);
+}
+
+
+button {
+    border-radius: 20px;
+    border: 1px solid var(--color-verde-escuro);
+    background-color: var(--color-verde-semiescuro);
+    color: var(--color-texto-cards);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.form-container button {
+    margin-top: 17px;
+    transition: 80ms ease-in;
+}
+
+.form-container button:hover {
+    background-color: #ffffff;
+    color: var(--color-verde-escuro);
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 9;
+}
+
+#overlayBtn {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 304px;
+    transform: translateX(-50%);
+    width: 143.67px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: relative;
+    background-color: var(--color-textos);
+    color: var(--color-texto-cards);
+    left: -150%;
+    height: 100%;
+    width: 250%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
-    padding-bottom: 60px;
-}
-
-.formulario form{
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
-    padding: 20px;
-    width: 600px;
-    padding-top: 160px;
-}
-
-.formulario form .inputBox{
-    margin-top: 20px;
-}
-
-.formulario form .inputBox span{
-    display: block;
-    color:#999;
-    padding-bottom: 5px;
-}
-
-.formulario form .inputBox input,
-.formulario form .inputBox select{
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border:1px solid rgba(0,0,0,.3);
-    color:#444;
-}
-
-.formulario form .flexbox{
-    display: flex;
-    gap:15px;
-}
-
-.formulario form .flexbox .inputBox{
-    flex:1 1 150px;
-}
-
-.formulario form .submit-btn{
-    width: 100%;
-    background:linear-gradient(45deg, rgb(43, 226, 150), rgb(12, 145, 45));
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 20px;
-    color:#000000;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s linear;
-}
-
-.formulario form .submit-btn:hover{
-    letter-spacing: 2px;
-    opacity: .8;
-}
-
-.formulario .card-formulario{
-    margin-bottom: -150px;
-    position: relative;
-    height: 250px;
-    width: 400px;
-}
-
-.formulario .card-formulario .front{
-    position: absolute;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
     height: 100%;
-    width: 100%;
-    top: 0; left: 0;
-    background:linear-gradient(45deg, rgb(43, 226, 150), rgb(12, 145, 45));
-    border-radius: 5px;
-    backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    padding:20px;
-    transform:perspective(1000px) rotateY(0deg);
-    transition:transform .4s ease-out;
+    width: 340px;
+    transition: 0.6s ease-in-out;
 }
 
-.formulario .card-formulario .front .image{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding-top: 10px;
+.overlay-left {
+    right: 60%;
+    transform: translateX(-12%);
+
 }
 
-.formulario .card-formulario .front .image img{
-    height: 50px;
+.overlay-right {
+    right: 0;
+    transform: translateX(0%);
 }
 
-.formulario .card-formulario .front .card-number-box{
-    padding:30px 0;
-    font-size: 22px;
-    color:#fff;
+.overlay-panel h1 {
+    color: #FFF;
 }
 
-.formulario .card-formulario .front .flexbox{
-    display: flex;
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 25px 0px 35px;
 }
 
-.formulario .card-formulario .front .flexbox .box:nth-child(1){
-    margin-right: auto;
+.overlay-panel button {
+    border: none;
+    /* background-color: transparent; */
 }
 
-.formulario .card-formulario .front .flexbox .box{
-    font-size: 15px;
-    color:#fff;
+
+.right-panel-active .overlay-container {
+    transform: translateX(-150%);
 }
 
-.formulario .card-formulario .back{
-    position: absolute;
-    top:0; left: 0;
-    height: 100%;
-    width: 100%;
-    background:linear-gradient(45deg, rgb(43, 226, 150), rgb(12, 145, 45));
-    border-radius: 5px;
-    padding: 20px 0;
-    text-align: right;
-    backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    transform:perspective(1000px) rotateY(180deg);
-    transition:transform .4s ease-out;
+.right-panel-active .overlay {
+    transform: translateX(50%);
 }
 
-.formulario .card-formulario .back .stripe{
-    background: #000;
-    width: 100%;
-    margin: 10px 0;
-    height: 50px;
+.right-panel-active .overlay-left {
+    transform: translateX(25%);
 }
 
-.formulario .card-formulario .back .box{
-    padding: 0 20px;
+.right-panel-active .overlay-right {
+    transform: translateX(35%);
 }
 
-.formulario .card-formulario .back .box span{
-    color:#fff;
-    font-size: 15px;
+.right-panel-active .sign-in-container {
+    transform: translateX(20%);
+    opacity: 0;
 }
 
-.formulario .card-formulario .back .box .cvv-box{
-    height: 50px;
-    padding: 10px;
-    margin-top: 5px;
-    color:#333;
-    background: #fff;
-    border-radius: 5px;
-    width: 100%;
+.right-panel-active .sign-up-container {
+    transform: translateX(66.7%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
 }
 
-.formulario .card-formulario .back .box img{
-    margin-top: 30px;
-    height: 30px;
-}
+@keyframes show {
 
+    0%,
+    50% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50.1%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
 
 footer {
     width: 100%;
@@ -500,7 +580,7 @@ footer {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
     }
-}    
+}
 
 @media screen and (max-width: 768px) {
     .nav-bar {
