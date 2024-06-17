@@ -157,7 +157,7 @@ svg {
 
 .listProduct .item img {
     width: 90%;
-    filter: drop-shadow(0 10px 10px #0009);
+    filter: drop-shadow(0 5px 5px #0009);
 }
 
 .listProduct {
@@ -173,11 +173,13 @@ svg {
 }
 
 .listProduct .item h2 {
+    padding-top: 10px;
     font-weight: 500;
     font-size: large;
 }
 
 .listProduct .item .price {
+    padding-top: 10px;
     letter-spacing: 7px;
     font-size: small;
 }
@@ -189,6 +191,10 @@ svg {
     padding: 5px 10px;
     margin-top: 10px;
     border-radius: 20px;
+}
+.listProduct .item button {
+    cursor: pointer;
+    transition: 1s;
 }
 
 .cartTab {
@@ -495,7 +501,6 @@ section {
 
 .box4 h1, .box4 h3, .box4 p {
     color: var(--color-neutral-0);
-    font-weight: bold;
     padding-top: 0.5rem;
     padding-bottom: 2vh;
 }
@@ -514,7 +519,6 @@ section {
 
 .box5 h3, .box5 p {
     color: var(--color-neutral-0);
-    font-weight: bold;
     padding-top: 0.5rem;
     padding-bottom: 2vh;
 }

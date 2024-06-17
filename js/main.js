@@ -36,7 +36,7 @@ const addDataToHTML = () => {
                 `<img src="${product.image}" alt="">
                 <h2>${product.name}</h2>
                 <div class="price">$${product.price}</div>
-                <button class="addCart">Add To Cart</button>`;
+                <button class="addCart">Adicione ao Carrinho</button>`;
             listProductHTML.appendChild(newProduct);
         });
     }
