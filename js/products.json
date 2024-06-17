@@ -2,26 +2,26 @@
     {
         "id": 1,
         "name": " LD01 LOUNGE CHAIR",
-        "price": 200,
-        "image": "IMG_produtos/Cadeira _bambu01.png"
+        "price": 150,
+        "image": "IMG_produtos/Cadeira_bambu01.png"
     },
     {
         "id": 2,
         "name": " LD02 LOUNGE CHAIR",
         "price": 250,
-        "image": "IMG_produtos/Cadeira _bambu02.png"
+        "image": "IMG_produtos/Cadeira_bambu02.png"
     },
     {
         "id": 3,
         "name": " LD03 LOUNGE CHAIR",
-        "price": 290,
-        "image": "IMG_produtos/Cadeira _bambu03.png"
+        "price": 190,
+        "image": "IMG_produtos/Cadeira_bambu03.png"
     },
     {
         "id": 4,
         "name": " LD04 LOUNGE CHAIR",
         "price": 200,
-        "image": "IMG_produtos/Cadeira  _bambu04.png"
+        "image": "IMG_produtos/Cadeira_bambu04.png"
     },
     {
         "id": 5,

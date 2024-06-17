@@ -25,6 +25,10 @@ body {
     background-color: var(--color-ver-02);
 }
 
+p {
+    font-size: 1.0rem;
+}
+
 header {
     background-color: var(--color-neutral-10);
     box-shadow: 0px 3px 10px #464646;
@@ -95,7 +99,7 @@ svg {
 
 .login-button button {
     border: none;
-    background-color: #25d366;
+    background-color: var(--color-ver-04);
     padding: 20px 25px;
     border-radius: 5px;
 }
@@ -272,13 +276,13 @@ body.showCart .container {
 }
 
 main {
-    height: 400vh;
+    height: auto;
     background-color: var(--color-ver-04);
 }
 
 
 .box1 img {
-    padding: 2vh;
+    padding: 4vh;
     border-radius: 17% 83% 18% 82% / 74% 22% 78% 26%;
 }
 
@@ -319,15 +323,15 @@ p {
     text-align: justify;
     width: 50vw;
     margin-left: 25vw;
+    padding-bottom: 4vh;
 }
 
 .Carrossel {
     margin: auto;
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
-    height: 700px;
-    width: 700px;
-
+    height: 500px;
+    width: 500px;
 }
 
 .slide {
@@ -338,58 +342,20 @@ p {
 
 .slide>img {
     object-fit: cover;
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
 }
 
-
-/* .box3 {
+.box3 {
     text-align: center;
     padding-top: 2vh;
+    padding-bottom: 4vh;
 }
 
-.box3 h1, .box3 p {
-    color: var(--color-ver-03);
-    padding-top: 2vh;
+.box3 h1, .box3 h2, .box3 h3, .box3 li {
+    color: var(--color-ver-02);
+    padding-top: 0.2rem;
 }
-
-.box3 p {
-    text-align: justify;
-    width: 50vw;
-    margin-left: 25vw;
-}
-
-.box4 {
-    text-align: center;
-    padding-top: 2vh;
-}
-
-.box4 h1, .box4 p {
-    color: var(--color-ver-03); 
-    padding-top: 2vh;
-}
-
-.box4 p {
-    text-align: justify;
-    width: 50vw;
-    margin-left: 25vw;
-}
-.box5 {
-    text-align: center;
-    padding-top: 2vh;
-}
-
-.box5 h1, .box5 ul li {
-    color: var(--color-ver-03); 
-    padding-top: 2vh;
-}
-
-.box5 p {
-    text-align: justify;
-    width: 50vw;
-    margin-left: 25vw;
-    padding-bottom:  4vh;
-} */
 
 .container {
     background-color: var(--color-ver-02);
@@ -397,8 +363,15 @@ p {
 }
 
 article {
-    height: 400vh;
+    height: auto;
     background-color: var(--color-ver-04);
+}
+
+article h1{
+    text-align: center;
+    color: var(--color-ver-01);
+    padding-top: 4vh;
+
 }
 
 .MVV {
@@ -406,7 +379,7 @@ article {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 2vh;
 }
 
 .carta {
@@ -425,7 +398,10 @@ article {
 }
 
 .carta img {
-    width: 100%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
     height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -445,6 +421,102 @@ article {
     font-size: 1rem;
     color: #666;
     line-height: 1.5;
+}
+
+.ODS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4vh;
+}
+
+.artigo {
+    width: 300px;
+    background-color: var(--color-ver-01);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    margin-bottom: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.artigo:hover {
+    transform: translateY(-5px);
+}
+
+.artigo img {
+    width: 50%;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.artigo-content {
+    padding: 20px;
+}
+
+.artigo-content h3 {
+    font-size: 1.5rem;
+    color: var(--color-ver-04);
+    margin-bottom: 10px;
+}
+
+.artigo-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+section {
+    height: auto;
+    background-color: var(--color-ver-02);
+    text-align: center;
+    color: var(--color-ver-04);
+    padding-top: 4vh;
+}
+
+.box4 {
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+
+.box4 h3, .box4 h4, .box4 p {
+    color: var(--color-ver-04);
+    padding-top: 0.5rem;
+    padding-bottom: 2vh;
+}
+
+.box4 h1, .box4 h3, .box4 p {
+    color: var(--color-neutral-0);
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 2vh;
+}
+
+.box5 {
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+
+.box5 h2, .box5 h4 {
+    color: var(--color-ver-04);
+    padding-top: 0.5rem;
+    padding-bottom: 2vh;
+}
+
+.box5 h3, .box5 p {
+    color: var(--color-neutral-0);
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 2vh;
 }
 
 footer {
