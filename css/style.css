@@ -778,6 +778,13 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .logofo img {
+        margin-left: 8vw;
+    }
+    .logofo {
+        margin-left: 3vw;
+    }
+
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
