@@ -78,7 +78,7 @@ header {
 
 .nav-list .nav-item a {
     text-decoration: none;
-    color: var(--color-neutral-30);
+    color: var(--color-neutral-40);
     transition: color 0.4s;
 }
 
@@ -562,11 +562,13 @@ footer {
     font-weight: 100;
 }
 
+
 @media only screen and (max-width: 992px) {
     .listProduct {
         grid-template-columns: repeat(3, 1fr);
     }
-}    
+}
+
 
 @media screen and (max-width: 768px) {
     .nav-bar {
@@ -574,6 +576,79 @@ footer {
     }
 
     .nav-item {
+        display: none;
+    }
+
+    .nav-item a {
+        color: #fff;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: flex;
+        margin-top: 0;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: flex;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        background-color: var(--color-neutral-10);
+        padding-left: 43%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-item a {
+        color: #fff;
+    }
+
+    .login-button {
         display: none;
     }
 
@@ -600,12 +675,13 @@ footer {
     }
 
     .mobile-menu .login-button {
-        display: block;
+        display: flex;
         padding: 1rem 2rem;
     }
 
     .mobile-menu .login-button button {
-        width: 100%;
+        background-color: var(--color-neutral-10);
+        padding-left: 33vw;
     }
 
     .open {
@@ -617,15 +693,33 @@ footer {
     }
 
     #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
         gap: 2rem;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-container.sign-up-container {
+        order: 2; 
+    }
+
+    .form-container.sign-in-container {
+        order: 1; 
+    }
+
+    .infield input {
+        width: calc(100% - 20px); 
+    }
+
+    .forgot {
+        text-align: left; 
+    }
+
+    .overlay-container {
+        display: none; 
     }
 }
